@@ -17,6 +17,7 @@ Jeweler::Tasks.new do |gem|
   gem.name = "activemodel_unique_errors"
   gem.homepage = "http://github.com/soemo/activemodel_unique_errors"
   gem.license = "MIT"
+  # FIXME soeren 08.08.2014 2x anpassen
   gem.summary = %Q{TODO: one-line summary of your gem}
   gem.description = %Q{TODO: longer description of your gem}
   gem.email = "soeren@mothes.org"
