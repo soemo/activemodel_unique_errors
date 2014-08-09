@@ -28,6 +28,7 @@ describe 'ActivemodelUniqueErrors' do
     @user.errors[:login].should == [msg]
     @user.errors['login']= msg
     @user.errors['login'].should == [msg]
+    @user.errors.size.should == 1
 
     # on other attr should work
     @user.errors[:notice]= msg
@@ -39,9 +40,10 @@ describe 'ActivemodelUniqueErrors' do
     @user.errors[:login].should == [msg, other_msg]
 
     # final
-    @user.errors.full_messages.should == ["Login This error text must be uniq!",
-                                      "Login new error text",
-                                      "Notice This error text must be uniq!"]
+    @user.errors.size.should == 3
+    @user.errors.full_messages.should == ['Login This error text must be uniq!',
+                                          'Login new error text',
+                                          'Notice This error text must be uniq!']
 
   end
 
@@ -57,6 +59,8 @@ describe 'ActivemodelUniqueErrors' do
     # next add with same error msg on same attr. will not insert the error
     @user.errors.add(:login, msg)
     @user.errors[:login].should == [msg]
+    @user.errors['login'].should == [msg]
+    @user.errors.size.should == 1
 
     # on other attr should work
     @user.errors.add(:notice, msg)
@@ -68,9 +72,10 @@ describe 'ActivemodelUniqueErrors' do
     @user.errors[:login].should == [msg, other_msg]
 
     # final
-    @user.errors.full_messages.should == ["Login This error text must be uniq!",
-                                      "Login new error text",
-                                      "Notice This error text must be uniq!"]
+    @user.errors.size.should == 3
+    @user.errors.full_messages.should == ['Login This error text must be uniq!',
+                                          'Login new error text',
+                                          'Notice This error text must be uniq!']
 
   end
 

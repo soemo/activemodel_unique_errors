@@ -29,7 +29,12 @@ user.errors.add(:login, msg)
 user.errors[:login]= msg
 
 
-user.errors[:login] # [msg] -  only unique error for this attr. and msg 
+user.errors[:login] # ['Login This error text must be uniq!'] - only one unique error for this attribute and message 
+user.errors.size # 1
+
+user.errors.add(:login, 'New error message')
+user.errors[:login] # ['Login This error text must be uniq!', 'Login New error message'] 
+user.errors.size # 2
 ```
 
 ## Contributing to activemodel_unique_errors
