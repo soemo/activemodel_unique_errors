@@ -5,7 +5,7 @@ activemodel_version = ENV['ACTIVEMODEL_VERSION'] || 'default'
 
 current_version = case activemodel_version
                     when 'master'
-                      {github: 'rails/rails/tree/master/activemodel'}
+                      {:github => 'rails/rails/tree/master/activemodel'}
                     when 'default'
                       '~> 4.1.4'
                     else
