@@ -13,8 +13,8 @@ module ActiveModelUniqueErrors
       self.send("[]_without_unique_check=", attribute, error)
     end
   end
-    # FIXME soeren 09.08.2014 message wird spaeter :invalid
-  def add_with_unique_check(attribute, message = nil, options = {})
+
+  def add_with_unique_check(attribute, message = :invalid, options = {})
     unless self.added?(attribute, message, options)
       add_without_unique_check(attribute, message, options)
     end

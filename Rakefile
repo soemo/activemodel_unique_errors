@@ -17,9 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "activemodel_unique_errors"
   gem.homepage = "http://github.com/soemo/activemodel_unique_errors"
   gem.license = "MIT"
-  # FIXME soeren 08.08.2014 2x anpassen
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Uniqe model errors}
+  gem.description = %Q{Only add a error messages for one model attribute if this error message not exists for the model attribute}
   gem.email = "soeren@mothes.org"
   gem.authors = ["soeren mothes"]
   # dependencies defined in Gemfile
@@ -32,11 +31,6 @@ RSpec::Core::RakeTask.new(:spec) do |spec|
   spec.pattern = FileList['spec/**/*_spec.rb']
 end
 
-desc "Code coverage detail"
-task :simplecov do
-  ENV['COVERAGE'] = "true"
-  Rake::Task['spec'].execute
-end
 
 task :default => :spec
 
