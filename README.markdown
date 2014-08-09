@@ -1,6 +1,6 @@
 # activemodel_unique_error
 
-[![Build Status](https://secure.travis-ci.org/soemo/activemodel_unique_error.png)](http://travis-ci.org/soemo/activemodel_unique_error)
+[![Build Status](https://travis-ci.org/soemo/activemodel_unique_errors.svg?branch=master)](https://travis-ci.org/soemo/activemodel_unique_errors)
 
 Only add a error messages for one model attribute if this error message not exists for the model attribute
 
