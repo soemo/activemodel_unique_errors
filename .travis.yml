@@ -1,10 +1,9 @@
 language: ruby
 
 rvm:
-  - 2.1.0
-  - 2.0.0
   - 1.9.3
-  - 1.8.7
+  - 2.0.0
+  - 2.1.0
   - ruby-head
   - jruby-18mode
   - jruby-19mode
@@ -14,9 +13,8 @@ env:
   - "ACTIVEMODEL_VERSION=3.2.19"
   - "ACTIVEMODEL_VERSION=4.0.8"
   - "ACTIVEMODEL_VERSION=4.1.4"
-  - "ACTIVEMODEL_VERSION=master"
 
 matrix:
   allow_failures:
-    - env: "ACTIVEMODEL_VERSION=master"
     - rvm: ruby-head
+    - rvm: jruby-head

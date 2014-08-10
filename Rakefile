@@ -21,7 +21,6 @@ Jeweler::Tasks.new do |gem|
   gem.description = %Q{Only add a error messages for one model attribute if this error message not exists for the model attribute}
   gem.email = "soeren@mothes.org"
   gem.authors = ["soeren mothes"]
-  # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
 
@@ -33,6 +32,3 @@ end
 
 
 task :default => :spec
-
-require 'yard'
-YARD::Rake::YardocTask.new

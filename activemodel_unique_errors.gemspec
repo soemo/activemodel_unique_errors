@@ -9,21 +9,22 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["soeren mothes"]
-  s.date = "2014-08-09"
+  s.date = "2014-08-10"
   s.description = "Only add a error messages for one model attribute if this error message not exists for the model attribute"
   s.email = "soeren@mothes.org"
   s.extra_rdoc_files = [
     "LICENSE.txt",
-    "README.rdoc"
+    "README.markdown"
   ]
   s.files = [
-    ".document",
     ".rspec",
+    ".travis.yml",
     "Gemfile",
     "LICENSE.txt",
-    "README.rdoc",
+    "README.markdown",
     "Rakefile",
     "VERSION",
+    "activemodel_unique_errors.gemspec",
     "lib/activemodel_unique_errors.rb",
     "spec/activemodel_unique_errors_spec.rb",
     "spec/spec_helper.rb"
@@ -39,26 +40,20 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<activemodel>, ["~> 4.1.4"])
-      s.add_development_dependency(%q<rspec>, ["~> 2.8.0"])
-      s.add_development_dependency(%q<yard>, ["~> 0.7"])
       s.add_development_dependency(%q<bundler>, ["~> 1.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 2.0.1"])
-      s.add_development_dependency(%q<simplecov>, [">= 0"])
+      s.add_development_dependency(%q<rspec>, ["~> 2.8.0"])
     else
       s.add_dependency(%q<activemodel>, ["~> 4.1.4"])
-      s.add_dependency(%q<rspec>, ["~> 2.8.0"])
-      s.add_dependency(%q<yard>, ["~> 0.7"])
       s.add_dependency(%q<bundler>, ["~> 1.0"])
       s.add_dependency(%q<jeweler>, ["~> 2.0.1"])
-      s.add_dependency(%q<simplecov>, [">= 0"])
+      s.add_dependency(%q<rspec>, ["~> 2.8.0"])
     end
   else
     s.add_dependency(%q<activemodel>, ["~> 4.1.4"])
-    s.add_dependency(%q<rspec>, ["~> 2.8.0"])
-    s.add_dependency(%q<yard>, ["~> 0.7"])
     s.add_dependency(%q<bundler>, ["~> 1.0"])
     s.add_dependency(%q<jeweler>, ["~> 2.0.1"])
-    s.add_dependency(%q<simplecov>, [">= 0"])
+    s.add_dependency(%q<rspec>, ["~> 2.8.0"])
   end
 end
 
