@@ -13,12 +13,14 @@ Gem::Specification.new do |s|
   s.description = "Only add a error messages for one model attribute if this error message not exists for the model attribute"
   s.email = "soeren@mothes.org"
   s.extra_rdoc_files = [
+    "CHANGELOG",
     "LICENSE.txt",
     "README.markdown"
   ]
   s.files = [
     ".rspec",
     ".travis.yml",
+    "CHANGELOG",
     "Gemfile",
     "LICENSE.txt",
     "README.markdown",
