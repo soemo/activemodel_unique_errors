@@ -1,7 +1,5 @@
 language: ruby
 
-bundler_args: --without development
-
 rvm:
   - 2.1.0
   - 2.0.0
@@ -10,6 +8,7 @@ rvm:
   - ruby-head
   - jruby-18mode
   - jruby-19mode
+  - jruby-head
 
 env:
   - "ACTIVEMODEL_VERSION=3.2.19"
