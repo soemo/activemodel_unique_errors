@@ -14,7 +14,7 @@ current_version = case activemodel_version
 
 gem 'activemodel', current_version
 
-
+gem 'bundler', '~> 1.6.5'
 gem 'rspec',   '~> 2.8.0'
 
 
