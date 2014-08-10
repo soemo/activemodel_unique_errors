@@ -5,7 +5,7 @@ activemodel_version = ENV['ACTIVEMODEL_VERSION'] || 'default'
 
 current_version = case activemodel_version
                     when 'default'
-                      '~> 4.1.4'
+                      '>= 0'
                     else
                       "~> #{activemodel_version}"
                   end
