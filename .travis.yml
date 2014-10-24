@@ -11,15 +11,15 @@ rvm:
 
 env:
   - "ACTIVEMODEL_VERSION=3.2.19"
-  - "ACTIVEMODEL_VERSION=4.0.8"
-  - "ACTIVEMODEL_VERSION=4.1.4"
+  - "ACTIVEMODEL_VERSION=4.0.10"
+  - "ACTIVEMODEL_VERSION=4.1.6"
 
 matrix:
   exclude:
     - rvm: jruby-18mode
-      env: "ACTIVEMODEL_VERSION=4.0.8"
+      env: "ACTIVEMODEL_VERSION=4.0.10"
     - rvm: jruby-18mode
-      env: "ACTIVEMODEL_VERSION=4.1.4"
+      env: "ACTIVEMODEL_VERSION=4.1.6"
   allow_failures:
     - rvm: ruby-head
     - rvm: jruby-head
