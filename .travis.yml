@@ -5,16 +5,18 @@ rvm:
   - 2.0.0
   - 2.1.7
   - 2.2.3
+  - 2.3
   - ruby-head
   - jruby-19mode
   - jruby-20mode
   - jruby-head
+  - jruby-9.0.5.0
 
 env:
   - "ACTIVEMODEL_VERSION=3.2.22"
   - "ACTIVEMODEL_VERSION=4.0.13"
   - "ACTIVEMODEL_VERSION=4.1.13"
-  - "ACTIVEMODEL_VERSION=4.2.4"
+  - "ACTIVEMODEL_VERSION=4.2.5.1"
 
 matrix:
   allow_failures:
