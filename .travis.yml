@@ -1,8 +1,6 @@
 language: ruby
 
 rvm:
-  - 1.9.3
-  - 2.0.0
   - 2.1.7
   - 2.2.3
   - 2.3
@@ -13,7 +11,6 @@ rvm:
   - jruby-9.0.5.0
 
 env:
-  - "ACTIVEMODEL_VERSION=3.2.22"
   - "ACTIVEMODEL_VERSION=4.0.13"
   - "ACTIVEMODEL_VERSION=4.1.13"
   - "ACTIVEMODEL_VERSION=4.2.5.1"
